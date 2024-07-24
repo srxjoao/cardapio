@@ -41,6 +41,7 @@ export default function App() {
         setListaPedidos(listaAux);
     }
 
+    console.table(listaPedidos);
 
     return (
         <div className="bloco-principal">

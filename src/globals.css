@@ -9,7 +9,7 @@ body{
         min-height: 170vh;
         flex-direction: row;
         justify-content: space-between;
-        background-color: rgb(236, 236, 236);
+        background-color: rgb(219, 215, 215);
 }
 .bloco-produtos{
     width: 50%;
@@ -57,7 +57,7 @@ td{
     padding: 1rem;
     border-radius: 1rem;
     color: white;
-    background-color: rgb(199, 10, 10);
+    background-color: rgb(10, 120, 199);
 }
 img{
     width: 300px;
@@ -74,7 +74,7 @@ button{
     border-radius: 1rem;
     border: none;
     color: white;
-    background-color: rgb(199, 10, 10);
+    background-color: rgb(10, 120, 199);
     padding: 1rem;
 }
 button:hover{
