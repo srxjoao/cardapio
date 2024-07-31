@@ -36,13 +36,19 @@ export default function App() {
         setListaPedidos([...listaPedidos, item]);
     }
 
-    const removerPedido = (id) => {
-        let listaAux = listaPedidos.filter((produto)=> produto.id !== id);
+    const removerItem = (id) => {
+        let listaAux = listaPedidos.filter((pedido)=> pedido.id !== id);
         setListaPedidos(listaAux);
     }
 
-    console.table(listaPedidos);
+    const removerUltimoitem = (id) => {
+        let listaPedidos = listaPedidos.pop((pedido)=> pedido.id !== id);
+        setListaPedidos(listaPedidos);
+    }
 
+
+    console.table(listaPedidos);
+  
     return (
         <div className="bloco-principal">
             <div className="bloco-produtos">
@@ -69,7 +75,10 @@ export default function App() {
                                 {produto.preco}
                             </td>
                             <td>
-                                <button onClick={()=> removerPedido(produto.id)}>X</button>
+                                <button onClick={()=> removerItem(produto.id)}>Remover Pedido</button>
+                            </td>
+                            <td>
+                                <button onClick={()=> removerUltimoitem(produto.id)}>Remover  ultimo  Pedido</button>
                             </td>
                         </tr>
                     </table>
