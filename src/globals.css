@@ -73,11 +73,11 @@ img{
 button{
     border-radius: 1rem;
     border: none;
-    color: white;
-    background-color: rgb(10, 120, 199);
+    color: #000;
+    background-color: #0A78C7;
     padding: 1rem;
 }
 button:hover{
     cursor: pointer;
-    background-color: blue;
+    background-color: #095c9b;
 }

@@ -37,14 +37,16 @@ export default function App() {
     }
 
     const removerItem = (id) => {
+        let remover = false;
         let listaAux = listaPedidos.filter((pedido)=> pedido.id !== id);
+        {
+            if (pedido.id == id){
+                
+            }
+        }
         setListaPedidos(listaAux);
-    }
+    };
 
-    const removerUltimoitem = (id) => {
-        let listaPedidos = listaPedidos.pop((pedido)=> pedido.id !== id);
-        setListaPedidos(listaPedidos);
-    }
 
 
     console.table(listaPedidos);
@@ -78,7 +80,7 @@ export default function App() {
                                 <button onClick={()=> removerItem(produto.id)}>Remover Pedido</button>
                             </td>
                             <td>
-                                <button onClick={()=> removerUltimoitem(produto.id)}>Remover  ultimo  Pedido</button>
+                                <button onClick={()=> removerUltimoitem(item.id)}>Remover  ultimo  Pedido</button>
                             </td>
                         </tr>
                     </table>
